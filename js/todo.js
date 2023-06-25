@@ -25,7 +25,7 @@ function paintTodo(newTodo) {
     const span = document.createElement('span')//삭제버튼 만들기 위해 span사용
     span.innerText = newTodo.text //.text를 추가하므로써 랜덤아이디를 부여하고 화면에 [object Object]가 뜨는 상황 해결
     const button = document.createElement('button')
-    button.innerText = ('❌')
+    button.innerText = ('✔')
     button.addEventListener('click', deleteToDo)
     li.appendChild(span)
     li.appendChild(button)
